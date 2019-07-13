@@ -5,7 +5,7 @@
 ;; Author   : Daniel Berg <mail@roosta.sh>
 ;; URL      : https://github.com/roosta/cljr-ivy
 ;; Version  : 0.1
-;; Keywords : ivy, clojure, refactor
+;; Keywords : lisp, tools, convinience
 ;; Package-Requires: ((clj-refactor "0.13.0") (ivy "0.7.0") (cl-lib "0.5"))
 
 ;; This file is part of GNU Emacs.
