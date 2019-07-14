@@ -49,7 +49,7 @@
 
 ;; ;;;###autoload
 (defun cljr-ivy ()
-  "Launch ivy and list all cljr candidates."
+  "Call `ivy-read' over cljr candidates, and call chosen function."
   (interactive)
   (ivy-read "CLJR function: "
             (cljr-ivy-candidates)
