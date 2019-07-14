@@ -51,18 +51,17 @@
 (defun cljr-ivy ()
   "Launch ivy and list all cljr candidates."
   (interactive)
-  (ivy-read
-   "CLJR function: "
-   (cljr-ivy-candidates)
-   :require-match t
-   :preselect (ivy-thing-at-point)
-   :history 'cljr-ivy-history
-   :sort t
-   :action (lambda (candidate)
-             (string-match "^\\(.+?\\): " candidate)
-             (call-interactively
-              (cadr (assoc (match-string 1 candidate) cljr--all-helpers))))
-   :caller 'cljr-ivy))
+  (ivy-read "CLJR function: "
+            (cljr-ivy-candidates)
+            :require-match t
+            :preselect (ivy-thing-at-point)
+            :history 'cljr-ivy-history
+            :sort t
+            :action (lambda (candidate)
+                      (string-match "^\\(.+?\\): " candidate)
+                      (call-interactively
+                       (cadr (assoc (match-string 1 candidate) cljr--all-helpers))))
+            :caller 'cljr-ivy))
 
 (provide 'cljr-ivy)
 
