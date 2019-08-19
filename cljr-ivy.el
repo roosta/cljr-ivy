@@ -32,7 +32,7 @@
 ;; Remembering key bindings for cljr is hard, especially the less
 ;; frequently used ones - this should help with that.
 
-;; Add `(require 'cljr-helm)` to your init file, bind `cljr-ivy` to
+;; Add `(require 'cljr-ivy)` to your init file, bind `cljr-ivy` to
 ;; a key (I'd suggest `C-c C-r`) in Clojure mode, and you're ready to go.
 
 ;;; Code:
